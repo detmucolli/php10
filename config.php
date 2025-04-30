@@ -4,7 +4,7 @@ session_start();
 $localhost = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "db1";
+$dbname = "db";
 
 
 
