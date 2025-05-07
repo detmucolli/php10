@@ -22,7 +22,7 @@
 <!-- Pills content -->
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form>
+    <form  action="add.php"  method="POST">
       <div class="text-center mb-3">
         <p>Sign in with:</p>
         
@@ -47,14 +47,14 @@
 
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" id="loginName" class="form-control" />
+        <input type="email" id="loginName" class="form-control"  name="username"/>
         <label class="form-label" for="loginName">Email or username</label>
       </div>
 
       <!-- Password input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="loginPassword" class="form-control" />
-        <label class="form-label" for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" class="form-control" name="password" />
+        <label class="form-label" for="loginPassword" >Password</label>
       </div>
 
       <!-- 2 column grid layout -->
@@ -74,7 +74,7 @@
       </div>
 
       <!-- Submit button -->
-      <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
+      <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4" name="submit">Sign in</button>
 
       <!-- Register buttons -->
       <div class="text-center">
