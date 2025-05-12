@@ -22,7 +22,7 @@
 <!-- Pills content -->
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form  action="add.php"  method="POST">
+    <form  action="loginLogic.php"  method="POST">
       <div class="text-center mb-3">
         <p>Sign in with:</p>
         
@@ -83,7 +83,7 @@
     </form>
   </div>
   <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-    <form>
+    <form  action="register.php" method="POST">
       <div class="text-center mb-3">
         <p>Sign up with:</p>
         <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
@@ -107,33 +107,28 @@
 
       <!-- Name input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="text" id="registerName" class="form-control" />
+        <input type="text" id="registerName" class="form-control" name="name" />
         <label class="form-label" for="registerName">Name</label>
       </div>
 
       <!-- Username input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="text" id="registerUsername" class="form-control" />
+        <input type="text" id="registerUsername" class="form-control" name="username" />
         <label class="form-label" for="registerUsername">Username</label>
       </div>
 
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" id="registerEmail" class="form-control" />
+        <input type="email" id="registerEmail" class="form-control" name="email" />
         <label class="form-label" for="registerEmail">Email</label>
       </div>
 
       <!-- Password input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="registerPassword" class="form-control" />
+        <input type="password" id="registerPassword" class="form-control" name="password" />
         <label class="form-label" for="registerPassword">Password</label>
       </div>
 
-      <!-- Repeat Password input -->
-      <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="registerRepeatPassword" class="form-control" />
-        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-      </div>
 
       <!-- Checkbox -->
       <div class="form-check d-flex justify-content-center mb-4">
